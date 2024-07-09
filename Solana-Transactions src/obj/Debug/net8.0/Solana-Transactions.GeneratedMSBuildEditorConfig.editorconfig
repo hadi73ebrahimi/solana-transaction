@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Solana_Transactions
-build_property.ProjectDir = D:\projects\github\solana transaction\Solana-Transactions\
+build_property.ProjectDir = D:\projects\github\solana transaction\Solana-Transactions src\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

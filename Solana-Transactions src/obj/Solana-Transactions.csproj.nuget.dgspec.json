@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\github\\solana transaction\\Solana-Transactions\\Solana-Transactions.csproj": {}
+    "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\Solana-Transactions.csproj": {}
   },
   "projects": {
-    "D:\\projects\\github\\solana transaction\\Solana-Transactions\\Solana-Transactions.csproj": {
+    "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\Solana-Transactions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\github\\solana transaction\\Solana-Transactions\\Solana-Transactions.csproj",
+        "projectUniqueName": "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\Solana-Transactions.csproj",
         "projectName": "Solana-Transactions",
-        "projectPath": "D:\\projects\\github\\solana transaction\\Solana-Transactions\\Solana-Transactions.csproj",
+        "projectPath": "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\Solana-Transactions.csproj",
         "packagesPath": "C:\\Users\\hadi\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\github\\solana transaction\\Solana-Transactions\\obj\\",
+        "outputPath": "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\hadi\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
@@ -48,6 +48,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
