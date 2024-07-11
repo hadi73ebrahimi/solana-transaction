@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Solana-Transactions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4139c3a1dedee931d3101275dce8eea6868a302f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20371806fd9e9b7d4db370a53d8ec0a2ce1e62ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("Solana-Transactions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Solana-Transactions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

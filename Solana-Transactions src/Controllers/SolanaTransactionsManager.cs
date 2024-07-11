@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
-using Solana_Transactions.Enums;
-using Solana_Transactions.Models;
-using Solana_Transactions.Transaction;
+using SolanaTransactions.Enums;
+using SolanaTransactions.Models;
+using SolanaTransactions.Transaction;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,26 +10,27 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Solana_Transactions.Controllers
+namespace SolanaTransactions.Controllers
 {
-    public class SolanaTransactions
+    public class SolanaTransactionsManager
     {
         private readonly HttpClient _httpClient;
         private Dictionary<string, TokenModel> _tokens = new Dictionary<string, TokenModel>();
 
         public EnDownloaderStatus CurrentStatus { get; private set; }
 
-        public SolanaTransactions(string rpcUrl)
+        public SolanaTransactionsManager(string rpcUrl)
         {
             _httpClient = new HttpClient { BaseAddress = new Uri(rpcUrl) };
         }
 
-        public async Task GetTransactions(string[] tokenAddresses)
+        public async Task<Dictionary<string, TokenModel>> GetTransactions(string[] tokenAddresses)
         {
             CurrentStatus = EnDownloaderStatus.Started;
             InitTokens(tokenAddresses);
             await DownloadTransactionsAsync(tokenAddresses);
             CurrentStatus = EnDownloaderStatus.Finished;
+            return _tokens;
         }
 
         private void InitTokens(string[] tokenAddresses)
@@ -58,12 +59,10 @@ namespace Solana_Transactions.Controllers
                         while (true)
                         {
 
-                            //var transaction = await _rpcClients.GetTransactionAsync(signature.Signature);
                             var transaction = await GetTransactionAsync(signature, 0);
 
                             var transactionmodel = JsonConvert.DeserializeObject<Rootobject>(transaction);
 
-                            //File.WriteAllText("trans2/"+signature.Signature+ ".json", transaction);
                             if (transactionmodel != null)
                             {
                                 _tokens[tokenAddress].Transactions.Add(transactionmodel);
@@ -112,7 +111,7 @@ namespace Solana_Transactions.Controllers
             return responseContent;
         }
 
-        public async Task<List<string>> GetSignaturesForAddressAsync(string tokenAddress, int limit, string lastSignature = null)
+        private async Task<List<string>> GetSignaturesForAddressAsync(string tokenAddress, int limit, string lastSignature = null)
         {
             var requestContent = new
             {

@@ -63,9 +63,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\Solana-Transactions.csproj",
-      "projectName": "Solana-Transactions",
-      "projectPath": "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\Solana-Transactions.csproj",
+      "projectUniqueName": "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\SolanaTransactions.csproj",
+      "projectName": "SolanaTransactions",
+      "projectPath": "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\SolanaTransactions.csproj",
       "packagesPath": "C:\\Users\\hadi\\.nuget\\packages\\",
       "outputPath": "D:\\projects\\github\\solana transaction\\Solana-Transactions src\\obj\\",
       "projectStyle": "PackageReference",

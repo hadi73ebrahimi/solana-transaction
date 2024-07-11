@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Solana_Transactions.Models
+namespace SolanaTransactions.Models
 {
     public class SignatureInfo
     {

@@ -1,0 +1,13 @@
+D:\projects\github\solana transaction\Solana-Transactions src\bin\Debug\net8.0\SolanaTransactions.deps.json
+D:\projects\github\solana transaction\Solana-Transactions src\bin\Debug\net8.0\SolanaTransactions.dll
+D:\projects\github\solana transaction\Solana-Transactions src\bin\Debug\net8.0\SolanaTransactions.pdb
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\SolanaTransactions.csproj.AssemblyReference.cache
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\SolanaTransactions.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\SolanaTransactions.AssemblyInfoInputs.cache
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\SolanaTransactions.AssemblyInfo.cs
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\SolanaTransactions.csproj.CoreCompileInputs.cache
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\SolanaTransactions.sourcelink.json
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\SolanaTransactions.dll
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\refint\SolanaTransactions.dll
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\SolanaTransactions.pdb
+D:\projects\github\solana transaction\Solana-Transactions src\obj\Debug\net8.0\ref\SolanaTransactions.dll

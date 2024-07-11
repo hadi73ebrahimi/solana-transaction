@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Solana_Transactions.Transaction
+namespace SolanaTransactions.Transaction
 {
 
     public class Rootobject
