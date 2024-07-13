@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Solana_Transactions.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace SolanaTransactions.Models
     {
         public string signature { get; set; }
         public long blockTime { get; set; }
-        public string err { get; set; }
+        public TransactionError err { get; set; }
         public ulong slot { get; set; }
     }
 }

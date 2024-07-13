@@ -134,7 +134,7 @@ namespace SolanaTransactions.Controllers
 
             var response = await _httpClient.PostAsync("", httpContent);
             response.EnsureSuccessStatusCode();
-
+            
             var responseJson = await response.Content.ReadAsStringAsync();
             var responseData = JsonConvert.DeserializeObject<SolanaRpcResponse>(responseJson);
 
